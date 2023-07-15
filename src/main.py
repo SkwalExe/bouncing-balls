@@ -20,7 +20,7 @@ def show_stdin():
     system("stty echo")
     cursor.show()
 
-VERSION = "0.1.0"
+VERSION = "0.1.1"
 
 def clear_terminal():
     # Clear terminal
@@ -361,13 +361,11 @@ def main():
     clear_terminal()
     with pynput.keyboard.Listener(on_press=on_press) as listener:
         while not stop:
-            if i % max(1, 10 - speed) == 0:
-                for ball in balls:
-                    ball.update()
 
-            if auto and (i + 1) % 2000 == 0:
-                for ball in balls:
+            for ball in balls:
+                if auto and (i + 1) % 2000 == 0:
                     ball.wtf()
+                ball.update()    
 
             # Hide all the previous positions of the balls
             for ball in balls:
@@ -376,6 +374,7 @@ def main():
             # Draw all the balls
             for ball in balls:
                 ball.draw_2()
+
             # Redraw the selected ball so it is on top of the others
             balls[selected_ball].draw_2()
 
@@ -383,7 +382,8 @@ def main():
             stdout.flush()
 
             i += 1
-            sleep(0.005)
+            sleep(0.005 * (11 - speed))
+
 
         end()
 
