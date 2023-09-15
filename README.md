@@ -1,6 +1,21 @@
-# Bouncing balls 🏀
+<p align="center">
+  <img src="assets/logo.png">
+</p>
 
-This is a highly customizable application that simulates one or more bouncing balls in your terminal.
+<p align="center">
+  <img src="https://img.shields.io/github/license/SkwalExe/bouncing-balls?style=for-the-badge">
+  <img src="https://img.shields.io/github/stars/SkwalExe/bouncing-balls?style=for-the-badge">
+  <img src="https://img.shields.io/github/issues/SkwalExe/bouncing-balls?color=blueviolet&style=for-the-badge">
+  <img src="https://img.shields.io/github/forks/SkwalExe/bouncing-balls?color=teal&style=for-the-badge">
+  <img src="https://img.shields.io/github/issues-pr/SkwalExe/bouncing-balls?color=tomato&style=for-the-badge">
+
+</p>
+
+<p align="center">💠 This is a highly customizable application that simulates one or more bouncing balls in your terminal. 💠</p>
+
+
+
+# Bouncing balls 🏀
 
 ![demo](assets/demo.gif)
 
